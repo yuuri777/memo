@@ -9,19 +9,23 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                             <a href="{{ route('memo.create',$currentProjectid) }}" class="plus-button">＋</a>
-                                <li class="nav-item active"><a class="nav-link" href="#!">編集</a></li>
-                                <li class="nav-item"><a class="nav-link" href="#!">ログアウト</a></li>
+                                <li class="nav-item active"><button type="submit" id="edit-btn" class="nav-link dropdown-item" >編集</a></li>
+
+                        <form method="POST" action="{{ route('logout') }}">
+                                <li class="nav-item"><button type="submit"  class="nav-link dropdown-item" href="{{ route('logout') }}">ログアウト</a></li>
+                                @csrf
+                            </form>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">その他</a>
                                     <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
                                         <a class="dropdown-item" href="#!">検索</a>
                                         <a class="dropdown-item" href="#!">目次追加</a>
-                                        <div class="dropdown-divider"></div>
+                                        <div class="daropdown-divider"></div>
                                         
                                         <form method="POST" action="{{ route('project.delete',$currentProjectid) }}">
                                         @csrf
                                         @method('DELETE')
-                                        <button type="submit" class="dropdown-item" >メモタイトルを削除する</a>
+                                        <button type="submit" class=" dropdown-item" >メモタイトルを削除する</a>
                                         </form> 
                                     </div>
                                 </li>
@@ -29,8 +33,8 @@
                         </div>
                     </div>
                 </nav>
-                <script>
-                    window.addEventListener('DOMContentLoaded', event => {
+<script>
+    window.addEventListener('DOMContentLoaded', event => {
 
 // Toggle the side navigation
 const sidebarToggle = document.body.querySelector('#sidebarToggle');
@@ -44,7 +48,11 @@ if (sidebarToggle) {
         document.body.classList.toggle('sb-sidenav-toggled');
         localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
     });
+    const editbtn=document.body.querySelector('#edit-btn');
+    editbtn.addEventListener('click',event => {
+        
+    });
 }
 
 });
-                </script>
+ </script>
