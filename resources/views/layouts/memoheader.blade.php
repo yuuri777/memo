@@ -9,7 +9,11 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                             <a href="{{ route('memo.create',$currentProjectid) }}" class="plus-button">＋</a>
+<<<<<<< HEAD
                                 <li class="nav-item active"><button type="submit" id="edit-text" class="nav-link dropdown-item" >編集</a></li>
+=======
+                                <li class="nav-item active"><button type="submit" id="edit-btn" class="nav-link dropdown-item" >編集</a></li>
+>>>>>>> origin/main
 
                         <form method="POST" action="{{ route('logout') }}">
                                 <li class="nav-item"><button type="submit"  class="nav-link dropdown-item" href="{{ route('logout') }}">ログアウト</a></li>
@@ -49,10 +53,17 @@ if (sidebarToggle) {
          // sb-sidenav-toggledというクラスをdocument.bodyに追加/削除している
         localStorage.setItem('sb|sidebar-toggle', document.body.classList.contains('sb-sidenav-toggled'));
     });
+<<<<<<< HEAD
     /*const editbtn=document.body.querySelector('#edit-btn');
     editbtn.addEventListener('click',event => {
         
     });*/
+=======
+    const editbtn=document.body.querySelector('#edit-btn');
+    editbtn.addEventListener('click',event => {
+        
+    });
+>>>>>>> origin/main
 }
 
 });

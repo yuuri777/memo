@@ -12,7 +12,11 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="/css/styles.css" rel="stylesheet" />
         
+<<<<<<< HEAD
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"  crossorigin="anonymous" referrerpolicy="no-referrer" />
+=======
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-0Jk6pORwvBHRUrsWLLP4j02Z4w4QD4hZ8b1Wp5j5LeLAidSknm3q8gBdKLPLxNwU6jDKU6f8U6a/31yplnfK6Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+>>>>>>> origin/main
     </head>
     <body>
         
