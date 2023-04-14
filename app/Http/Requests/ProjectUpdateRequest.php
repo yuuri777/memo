@@ -4,7 +4,7 @@ namespace App\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreMemoRequest extends FormRequest
+class ProjectUpdateRequest extends FormRequest
 {
     /**
      * Determine if the user is authorized to make this request.
@@ -22,22 +22,16 @@ class StoreMemoRequest extends FormRequest
     public function rules(): array
     {
         return [
-            'memo_name' => 'required|max:500|string',
+            'content' => 'required|string',
+            
             //
         ];
     }
+
     public function attributes()
     {
         return[
-            'memo_name'=>'メモ名',
-            
-        ];
-    }
-
-    public function messages()
-    {
-        return[
-           
+            'content'=> '内容',
         ];
     }
 }

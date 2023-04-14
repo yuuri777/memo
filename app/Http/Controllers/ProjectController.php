@@ -27,18 +27,19 @@ class ProjectController extends Controller
             return view('projects.index',compact('projects'));
             //取得したプロジェクトじょうほうをcompact関数を使用してビューに渡している。
         }
-        /**
-         * プロジェクト作成画面
-         */
-        public function create()
+    /**
+     * プロジェクト作成画面
+     */
+    public function create()
         {
             $projects = Auth::user()->projects->all();
             return view('projects.create',compact('projects'));
+            //ここで指定したパスはviewでの指定した名前ではなくblade名になる
         }
-        /**
-         * プロジェクト作成処理
-         */
-        public function store(StoreProjectRequest $request)
+    /**
+     * プロジェクト作成処理
+    */
+    public function store(StoreProjectRequest $request)
         // フォームで入力された値は$requestという引数で受け取っている。
         {
             //トランザクション
@@ -70,7 +71,7 @@ class ProjectController extends Controller
         }
             return redirect()->route('projects.index');
         }
-        public function delete($id)
+     public function delete($id)
     {
 
         //トランザクション開始

@@ -10,6 +10,44 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+
+ .edit-btn{
+  border: none; 
+   background-color: white;
+ }
+ .fas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  background-color: aqua;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+
+}
+ .delete-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 30px;
+  border: none;
+  height: 30px;
+  background-color: red;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+}
+.none-btn{
+  display:none;
+}
+
  .plus-button {
   display: inline-block;
   border-radius: 50%;
@@ -10876,3 +10914,22 @@ body.sb-sidenav-toggled #wrapper #sidebar-wrapper {
     margin-left: -15rem;
   }
 }
+
+
+
+
+
+  .parent-element{
+    position: relative;
+    /* 子要素を親要素を基準として位置指定できるようになる。 */
+  }
+
+  .delete-btn1 {
+    position: absolute;
+  right: -100px;
+  /* 要素を右端から100pxの位置に配置するためのもの 
+   position: absolute;は要素を絶対１２配置するためのプロパティ。親要素に影響されずに配置することができる。
+    right: -100pxは要素を右端から100pxの位置に配置するためのプロパティで、負の値を指定することで要素を画面外に配置することができる。;*/
+}
+
+

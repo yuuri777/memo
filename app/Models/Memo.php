@@ -11,6 +11,7 @@ class Memo extends Model
 
     protected $fillable = [
         'project_id',
+        
         'memo_name',
         
     ];

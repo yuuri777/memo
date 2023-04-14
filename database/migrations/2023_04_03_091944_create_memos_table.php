@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('memos', function (Blueprint $table) {
             $table->id();
             $table->biginteger('project_id')->unsigned();
-            // unsigned()は符号なし整数を表す絡む属性で、負の値を表すことができないため、正の値の範囲がより大きくなる。
+            // unsigned()は符号なし整数を表すカラム属性で、負の値を表すことができないため、正の値の範囲がより大きくなる。
             $table->string('memo_name',100);
             $table->timestamps();
 
