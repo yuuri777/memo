@@ -28,20 +28,11 @@
                         キャンセル
                     </a>
 
-                    
-                    <button type="submit" class="btn btn-primary"  data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        目次
-                    </button>
                     <button type="submit" class="btn btn-primary">
                         更新
                     </button>
                     
  
-                    <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown" style="position: absolute; top: 100%;">
-                    <a class="dropdown-item" id="h1btn" >h1の見出し</a>
-                    <a class="dropdown-item" id="h2btn" href="{{ route('memo.index',$project->project_id) }}">h2の見出し</a>
-                    <a class="dropdown-item" id="h3btn" href="#">h3の見出し</a>
-                </div>
 
 
                 </div>

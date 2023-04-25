@@ -9,7 +9,6 @@
                         <div class="collapse navbar-collapse" id="navbarSupportedContent">
                             <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
                                 <li class="nav-item active"><a class="nav-link" href="#!"></a></li>
-<<<<<<< HEAD
                                 <form method="GET" action="{{ route('memo.search') }}">
 
 <li class="nav-item"><button type="submit"  class="nav-link dropdown-item" href="{{ route('memo.search') }}">検索</a></li>
@@ -17,9 +16,6 @@
 </form>
                                 <form method="POST" action="{{ route('logout') }}">
 
-=======
-                                <form method="POST" action="{{ route('logout') }}">
->>>>>>> origin/main
                                 <li class="nav-item"><button type="submit"  class="nav-link dropdown-item" href="{{ route('logout') }}">ログアウト</a></li>
                                 @csrf
                             </form>
@@ -37,11 +33,7 @@ window.addEventListener('DOMContentLoaded', event => {
 
 // Toggle the side navigation
 const sidebarToggle = document.body.querySelector('#sidebarToggle');
-<<<<<<< HEAD
 
-=======
-console.log(sidebarToggle);
->>>>>>> origin/main
 if (sidebarToggle) {
    
     sidebarToggle.addEventListener('click', event => {
