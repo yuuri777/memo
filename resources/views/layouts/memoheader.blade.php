@@ -12,7 +12,7 @@
                                 <li class="nav-item active"><button type="submit" id="edit-text" class="nav-link dropdown-item" >編集</a></li>
 
                         <form method="POST" action="{{ route('logout') }}">
-                                <li class="nav-item"><button type="submit"  class="nav-link dropdown-item" href="{{ route('logout') }}">ログアウト</a></li>
+                               <li class="nav-item"><button type="submit"  class="nav-link dropdown-item" href="{{ route('logout') }}">ログアウト</a></li>
                                 @csrf
                             </form>
                                 <li class="nav-item dropdown">
